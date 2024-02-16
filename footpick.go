@@ -64,10 +64,9 @@ func main() {
     }
     reader := bufio.NewReader(os.Stdin)
     input, _ := reader.ReadString('\n')
-    input = strings.TrimSuffix(input, '\n')
+    input = strings.TrimSuffix(input, "\n")
     display.Flush()
-    display.Write("hello")
-    display.Write(input)
+    display.Write(fmt.Sprintf("hello %s", input))
     display.Render(0)
     input, _ = reader.ReadString('\n')
 }
