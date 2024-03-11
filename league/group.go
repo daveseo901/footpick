@@ -1,14 +1,14 @@
 package league
 
 type PlayerGroup struct {
-    players []Player
+	players []Player
 }
 
 type FreeAgency struct {
-    PlayerGroup
+	PlayerGroup
 }
 
 type DraftPool struct {
-    year int
-    players []Player
+	year    int
+	players []Player
 }
